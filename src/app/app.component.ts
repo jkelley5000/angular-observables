@@ -10,5 +10,10 @@ import { HeaderComponent } from './components/common/header/header.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-observables';
+
+  constructor() { }
+
+  processEmittedFormEvent(message: string) {
+    console.log(message);
+  }
 }
